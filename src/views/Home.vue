@@ -81,6 +81,7 @@
 <script>
 import 'leaflet/dist/leaflet.css'
 import { LMap, LTileLayer, LControlLayers, LMarker, LPopup, LIcon, LControl } from "vue2-leaflet";
+import axios from 'axios'
 
 export default {
   name: 'Home',
@@ -139,6 +140,26 @@ export default {
         }
       ],
     };
+  },
+  methods: {
+    search(kbn){
+      if (kbn === '000') {
+        this.facilities = [];
+        return;
+      }
+        const rootPath = 'http://localhost:8080/'
+//        const rootPath = 'https://gen-util-dis-app-of-map-api.herokuapp.com/'
+      const path = rootPath + 'home/search'
+      axios.post(path, {
+        kbn : kbn
+      })
+        .then(response => {
+          this.facilities = response.data
+        })
+        .catch(error => {
+          console.log(error)
+        })
+    }
   },
 }
 </script>
