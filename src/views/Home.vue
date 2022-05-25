@@ -149,7 +149,7 @@ export default {
       }
         const rootPath = 'http://localhost:8080/'
 //        const rootPath = 'https://gen-util-dis-app-of-map-api.herokuapp.com/'
-      const path = rootPath + 'home/search'
+      const path = rootPath + 'main/search'
       axios.post(path, {
         kbn : kbn
       })
