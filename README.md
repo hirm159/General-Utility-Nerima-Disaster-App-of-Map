@@ -1,16 +1,16 @@
 # general-utility-nerima-disaster-app-of-map
 
-## Project setup
+### リポジトリからクローン後やモジュール追加後に実行
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### ローカル起動時
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### ビルド処理(/docs配下に作成)
 ```
 npm run build
 ```
@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### アプリケーションについて
+Herokuに配置したAPIサーバーと接続し処理を実行しています。
