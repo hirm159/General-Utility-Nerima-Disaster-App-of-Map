@@ -164,7 +164,12 @@ export default {
 }
 </script>
 <style>
-  @media screen and (max-width:639px) {
+  @media screen and (max-width:499px) {
+    #mainMap {
+      height: 430px;
+    }
+  }
+  @media screen and (min-width: 500px)and (max-width:639px) {
     #mainMap {
       height: 530px;
     }
