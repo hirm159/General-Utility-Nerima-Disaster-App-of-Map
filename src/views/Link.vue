@@ -44,8 +44,8 @@
     },
     methods: {
       getLinks() {
-        const rootPath = 'http://localhost:8080/'
-//        const rootPath = 'https://gen-util-dis-app-of-map-api.herokuapp.com/'
+//        const rootPath = 'http://localhost:8080/'
+        const rootPath = 'https://gen-util-dis-app-of-map-api.herokuapp.com/'
         const path = rootPath + 'link/init'
         axios.get(path)
           .then(response => {
